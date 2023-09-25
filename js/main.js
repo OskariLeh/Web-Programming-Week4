@@ -2,7 +2,6 @@ let textField = document.getElementById("input-show")
 let submitButton = document.getElementById("submit-data")
 let showContainer = document.getElementById("show-container")
 
-
 submitButton.addEventListener("click", async () => {
     showContainer.replaceChildren()
     const url = "https://api.tvmaze.com/search/shows?q=" + textField.value

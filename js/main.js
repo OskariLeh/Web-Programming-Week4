@@ -1,9 +1,10 @@
 let textField = document.getElementById("input-show")
 let submitButton = document.getElementById("submit-data")
-let showContainer = document.querySelector("div")
+let showContainer = document.getElementById("show-container")
+
 
 submitButton.addEventListener("click", async () => {
-    console.log(textField)
+    showContainer.replaceChildren()
     const url = "https://api.tvmaze.com/search/shows?q=" + textField.value
     const dataPromise = await fetch(url)
     const json = await dataPromise.json()

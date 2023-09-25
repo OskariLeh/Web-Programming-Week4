@@ -17,13 +17,14 @@ body {
     border-radius: 6px;
     box-shadow: 8px 5px 3px 2px teal;
 
-    h1 {
-        text-align: center;
-    }
+}
 
-    img {
-        display: block;
-    }
+.show-info > h1 {
+    text-align: center;
+}
+
+.show-data > img {
+    display: block;
 }
 
 .show-info {
@@ -41,10 +42,8 @@ body {
 }
 
 @media (max-width: 800px) {
-    .show-data {
-        img{
-            margin: auto;
-        }
+    .show-data > img{
+        margin: auto;
     }
     .show-info > p {
         text-align: center;
